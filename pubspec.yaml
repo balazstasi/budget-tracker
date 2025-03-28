@@ -1,0 +1,26 @@
+name: budget_tracker_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.19.0  # For date/number formatting
+  shared_preferences: ^2.2.2  # For persistent storage (simple data)
+  fl_chart: ^0.66.0 # For Charts
+  provider: ^6.1.1  # For State management
+  sqflite: ^2.3.0 # For Database Operations
+  path: ^1.8.2 # For file path operations
+  path_provider: ^2.1.1 # To access device storage
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
