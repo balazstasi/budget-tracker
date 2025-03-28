@@ -21,7 +21,7 @@ class _NewTransactionScreenState extends State<NewTransactionScreen> {
   String _transactionType = 'Expense'; // Default to expense
   String _amountDisplay = '0';
   bool _isDecimalMode = false;
-  bool _isLongPressing = false;
+  final bool _isLongPressing = false;
   final Duration _longPressAnimationDuration = const Duration(milliseconds: 300);
 
   Future<void> _selectDate(BuildContext context) async {

@@ -79,8 +79,8 @@ class MonthlySummary extends StatelessWidget {
         const SizedBox(height: 16),
         
         // Calendar header
-        Row(
-          children: const [
+        const Row(
+          children: [
             Expanded(child: Text('Mon', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold))),
             Expanded(child: Text('Tue', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold))),
             Expanded(child: Text('Wed', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold))),
@@ -120,8 +120,8 @@ class MonthlySummary extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                             color: isOverBudget 
-                              ? Theme.of(context).colorScheme.error.withOpacity(0.2)
-                              : Theme.of(context).colorScheme.primary.withOpacity(0.2),
+                              ? Theme.of(context).colorScheme.error.withAlpha(51)
+                              : Theme.of(context).colorScheme.primary.withAlpha(51),
                             borderRadius: BorderRadius.circular(8),
                           ),
                         ),
@@ -136,7 +136,7 @@ class MonthlySummary extends StatelessWidget {
                           style: TextStyle(
                             color: isCurrentMonth 
                               ? Theme.of(context).colorScheme.onSurface
-                              : Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
+                              : Theme.of(context).colorScheme.onSurface.withAlpha(51),
                             fontWeight: isCurrentMonth && dayExpense > 0 ? FontWeight.bold : FontWeight.normal,
                           ),
                         ),

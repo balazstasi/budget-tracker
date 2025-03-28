@@ -62,10 +62,10 @@ class ThemeProvider with ChangeNotifier {
         outline: Colors.grey.shade300,
       ),
       useMaterial3: true,
-      cardTheme: CardTheme(
+      cardTheme: const CardTheme(
         color: Colors.white,
         elevation: 2,
-        margin: const EdgeInsets.symmetric(vertical: 4, horizontal: 0),
+        margin: EdgeInsets.symmetric(vertical: 4, horizontal: 0),
       ),
     );
   }

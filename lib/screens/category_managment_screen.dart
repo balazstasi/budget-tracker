@@ -241,7 +241,7 @@ class _CategoryManagementScreenState extends State<CategoryManagementScreen> {
                         ),
                       ),
                       tileColor: _selectedCategory?.id == category.id
-                        ? Theme.of(context).colorScheme.primaryContainer.withOpacity(0.2)
+                        ? Theme.of(context).colorScheme.primaryContainer.withAlpha(51)
                         : null,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
@@ -284,10 +284,10 @@ class _CategoryManagementScreenState extends State<CategoryManagementScreen> {
                         flex: 2,
                         child: TextFormField(
                           controller: _categoryNameController,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             labelText: 'Category Name',
-                            border: const OutlineInputBorder(),
-                            contentPadding: const EdgeInsets.symmetric(
+                            border: OutlineInputBorder(),
+                            contentPadding: EdgeInsets.symmetric(
                               horizontal: 12,
                               vertical: 14,
                             ),
